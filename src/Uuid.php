@@ -646,21 +646,6 @@ class Uuid implements UuidInterface
     }
 
     /**
-     * Simple test to see if string could be a 32 char hex
-     *
-     * @param  string $uuid The string UUID to test
-     * @return boolean
-     */
-    private static function looksLikeHex($uuid)
-    {
-        if (strlen($uuid) === 32) {
-            return true;
-        }
-
-        return false;
-    }
-
-    /**
      * Generate a version 1 UUID from a host ID, sequence number, and the current time.
      *
      * @param int|string $node A 48-bit number representing the hardware address
